@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MyProjects\\GitHub\\CarApi\\CarApi\\CarApi.csproj",
+      "projectUniqueName": "D:\\MyProjects\\GitHub\\CarWaleAPI\\CarApi\\CarApi\\CarApi.csproj",
       "projectName": "CarApi",
-      "projectPath": "D:\\MyProjects\\GitHub\\CarApi\\CarApi\\CarApi.csproj",
+      "projectPath": "D:\\MyProjects\\GitHub\\CarWaleAPI\\CarApi\\CarApi\\CarApi.csproj",
       "packagesPath": "C:\\Users\\v-sivad\\.nuget\\packages\\",
-      "outputPath": "D:\\MyProjects\\GitHub\\CarApi\\CarApi\\obj\\",
+      "outputPath": "D:\\MyProjects\\GitHub\\CarWaleAPI\\CarApi\\CarApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
