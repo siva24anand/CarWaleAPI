@@ -18,5 +18,10 @@ namespace CarApi.Models
     public string LaunchDate { get; set; }
     public string ImageURL { get; set; }
   }
+    public class UpcomingCar: Car
+    {
+        public string LaunchDate { get; set; }
+        public string ImageURL { get; set; }
+    }
 
 }

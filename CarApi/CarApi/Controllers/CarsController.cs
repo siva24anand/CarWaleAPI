@@ -19,9 +19,9 @@ namespace CarApi.Controllers
       {
         _cardata = new CarData();
       }
-      public List<FeaturedCar> GetUpcomingCars()
+      public List<UpcomingCar> GetUpcomingCars()
       {
-        return _cardata.FeaturedCarValues();
+        return _cardata.UpcomingCarValues();
       }
 
     }
