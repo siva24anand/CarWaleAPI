@@ -38,8 +38,13 @@ namespace CarApi
         app.UseDeveloperExceptionPage();
       }
 
-            app.UseCors("carcors");
-      app.UseMvc();
+      app.UseCors("carcors");
+            app.UseMvc();
+            //app.UseMvc(routes =>
+            //{
+            //    routes.MapRoute(name: "default",
+            //        template: "{Controller=Cars}/{action=index}/{id?}");
+            //});
     }
   }
 }
