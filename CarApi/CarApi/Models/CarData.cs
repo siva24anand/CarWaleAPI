@@ -11,7 +11,7 @@ namespace CarApi.Models
                     
         public static List<UpcomingCars> _upcomingCars = new List<UpcomingCars>()
         {
-            new UpcomingCars{Name = "Land Rover  New Range Rover Evoque", LaunchDate ="Jun 2019", EstimatedPrice = "53 - 70 Lakhs", ImageURL = "https://imgd.aeplcdn.com/310x174/cw/ec/37721/Land-Rover-New-Range-Rover-Evoque-Exterior-145496.jpg?wm=0&q=85"},
+            new UpcomingCars{Name = "Land Rover  New Range Rover Evoque", LaunchDate ="Jun 2019", EstimatedPrice = "53 - 70 Lakhs", ImageURL = ""},
             new UpcomingCars{Name = "MG  Hector", LaunchDate ="18 - 23 Lakhs", EstimatedPrice = "April 2018", ImageURL = "https://imgd.aeplcdn.com/310x174/cw/ec/36756/MG-Hector-Exterior-145971.jpg?wm=0&q=85"},
             new UpcomingCars{Name = "Hyundai  Venue", LaunchDate ="21st May 2019", EstimatedPrice = "8 - 10 Lakhs", ImageURL = "https://imgd.aeplcdn.com/310x174/cw/ec/35455/Hyundai-Venue-Exterior-154436.jpg?wm=0&q=85"},
             new UpcomingCars{Name = "Jaguar  E-Pace", LaunchDate ="Jun 2019", EstimatedPrice = "50 - 60 Lakhs", ImageURL = "https://imgd.aeplcdn.com/310x174/cw/ec/31125/Jaguar-EPace-Exterior-108050.jpg?wm=0&q=85"},
