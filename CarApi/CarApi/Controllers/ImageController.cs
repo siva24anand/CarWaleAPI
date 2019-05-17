@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
+using Microsoft.Extensions.Hosting;
 
 namespace CarApi.Controllers
 {
@@ -12,12 +13,20 @@ namespace CarApi.Controllers
     [ApiController]
     public class ImageController : ControllerBase
     {
-        [HttpGet("GetImage")]
-        public IActionResult GetImage()
+        private string _imageFolder = "Images";
+        private string _extension = ".webp";
+
+        private readonly IHostingEnvironment _hostingEnvironment;
+        public ImageController(IHostingEnvironment hostingEnvironment)
         {
-            return new PhysicalFileResult(@"..\Images\Rover.PNG", "image/jpeg");
-            //var image = System.IO.File.OpenRead(@"..\Images\Rover.PNG");
-            //return File(image, "image/jpeg");
+            _hostingEnvironment = hostingEnvironment;
+        }
+
+        [HttpGet("GetImage")]
+        public IActionResult GetImage(string category, string name)
+        {
+            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, category, name + _extension);
+            return new PhysicalFileResult(root, "image/webp");
         }
     }
 }

@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
 
 namespace CarApi
 {
-  public class Startup
+    public class Startup
   {
     public Startup(IConfiguration configuration)
     {
@@ -28,6 +22,7 @@ namespace CarApi
             services.AddCors(options => {
                 options.AddPolicy("carcors", policy => policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
                 });
+            services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

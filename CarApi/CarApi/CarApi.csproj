@@ -5,6 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Images\LaunchedCars\" />
+    <Folder Include="Images\PopularCars\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
@@ -15,10 +17,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Images\Land-Rover-New-Range-Rover-Evoque.webp">
+    <None Update="Images\UpcomingCars\HyundaiKona.webp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="Images\Rover.PNG">
+    <None Update="Images\UpcomingCars\HyundaiVenue.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\UpcomingCars\JaguarE-Pace.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\UpcomingCars\LandRoverNewRangeRoverEvoque.webp">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Images\UpcomingCars\MGHector.webp">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>

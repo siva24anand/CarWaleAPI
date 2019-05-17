@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using CarApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace CarApi.Controllers
 {
@@ -12,11 +13,15 @@ namespace CarApi.Controllers
     [ApiController]
     public class FeaturedController : ControllerBase
     {
-        CarData _cardata;
-        public FeaturedController()
+        private CarData _cardata;
+        private readonly AppSettings _appSettings;
+
+        public FeaturedController(IOptions<AppSettings> appSettings)
         {
-            _cardata = new CarData();
+            _appSettings = appSettings.Value;
+            _cardata = new CarData(_appSettings.CarWaleApiBaseURL);
         }
+
         [HttpGet("GetUpcomingCars")]
         public List<UpcomingCars> GetUpcomingCars()
         {

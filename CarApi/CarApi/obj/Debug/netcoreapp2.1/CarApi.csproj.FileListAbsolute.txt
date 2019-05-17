@@ -39,5 +39,7 @@ D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.Ass
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.RazorTargetAssemblyInfo.cache
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.dll
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.pdb
-D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\Land-Rover-New-Range-Rover-Evoque.webp
-D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\Rover.PNG
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\UpcomingCars\HyundaiKona.webp
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\UpcomingCars\HyundaiVenue.webp
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\UpcomingCars\JaguarE-Pace.webp
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\Images\UpcomingCars\MGHector.webp
