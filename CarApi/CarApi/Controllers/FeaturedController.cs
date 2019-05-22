@@ -12,7 +12,7 @@ namespace CarApi.Controllers
 {
     [Route("api/featured")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class FeaturedController : ControllerBase
     {
         private CarData _cardata;

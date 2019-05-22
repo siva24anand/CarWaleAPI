@@ -14,7 +14,8 @@ namespace CarApi.Controllers
     public class ImageController : ControllerBase
     {
         private string _imageFolder = "Images";
-        private string _extension = ".webp";
+        private string _webpextension = ".webp";
+        private string _pngextension = ".png";
 
         private readonly IHostingEnvironment _hostingEnvironment;
         public ImageController(IHostingEnvironment hostingEnvironment)
@@ -25,7 +26,14 @@ namespace CarApi.Controllers
         [HttpGet("GetImage")]
         public IActionResult GetImage(string category, string name)
         {
-            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, category, name + _extension);
+            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, category, name + _webpextension);
+            return new PhysicalFileResult(root, "image/webp");
+        }
+
+        [HttpGet("GetBannerImage")]
+        public IActionResult GetBannerImage(string name)
+        {
+            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, name + _pngextension);
             return new PhysicalFileResult(root, "image/webp");
         }
     }
