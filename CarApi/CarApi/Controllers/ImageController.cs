@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.IO;
 using Microsoft.Extensions.Hosting;
+using CarApi.Models;
 
 namespace CarApi.Controllers
 {
@@ -16,6 +17,7 @@ namespace CarApi.Controllers
         private string _imageFolder = "Images";
         private string _webpextension = ".webp";
         private string _pngextension = ".png";
+        private string _adsCategory = "Ads";
 
         private readonly IHostingEnvironment _hostingEnvironment;
         public ImageController(IHostingEnvironment hostingEnvironment)
@@ -36,5 +38,28 @@ namespace CarApi.Controllers
             var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, name + _pngextension);
             return new PhysicalFileResult(root, "image/webp");
         }
+
+        [HttpGet("GetAdImage")]
+        public IActionResult GetAdImage(string size)
+        {
+            var name = GetRandomImage(size);
+            //var name = "Ad_vw";
+            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, _adsCategory, name + _pngextension);
+            return new PhysicalFileResult(root, "image/webp");
+        }
+
+        private string GetRandomImage(string size)
+        {
+            var random = new Random();
+            var adList = AdsModel.ADVSMALL;
+            if(size == "small")
+            {
+                var index = random.Next(adList.Count);
+                return adList[index];
+            }
+            return string.Empty;
+            
+        }
+
     }
 }

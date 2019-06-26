@@ -5,27 +5,28 @@ using System.Threading.Tasks;
 using CarApi.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis.Options;
 using Microsoft.Extensions.Options;
 
 namespace CarApi.Controllers
 {
-    [Route("api/Brand")]
+    [Route("api/Dealer")]
     [ApiController]
-    public class BrandController : ControllerBase
+    public class DealerController : ControllerBase
     {
         private CarData _cardata;
         private readonly AppSettings _appSettings;
 
-        public BrandController(IOptions<AppSettings> appsettings)
+        public DealerController(IOptions<AppSettings> appsetting)
         {
-            _appSettings = appsettings.Value;
+            _appSettings = appsetting.Value;
             _cardata = new CarData(_appSettings.CarWaleApiBaseURL);
         }
 
-        [HttpGet("GetBrands")]
-        public List<string> GetBrands()
+        [HttpGet("GetDealers")]
+        public List<string> GetDealers()
         {
-            return _cardata.GetBrands();
+            return _cardata.GetDealer();
         }
     }
 }

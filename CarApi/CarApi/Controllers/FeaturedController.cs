@@ -45,9 +45,10 @@ namespace CarApi.Controllers
         [HttpGet("GetAvailableCars")]
         public List<LaunchedCars> GetAvailableCars()
         {
-            var availableCars = _cardata.GetLaunchedCars();
-            availableCars.AddRange(_cardata.GetPopularCars());
-            return availableCars;
+            return _cardata.GetAvailableCars();
+            //var availableCars = _cardata.GetLaunchedCars();
+            //availableCars.AddRange(_cardata.GetPopularCars());
+            //return availableCars;
         }
     }
 }

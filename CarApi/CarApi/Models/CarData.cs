@@ -56,7 +56,13 @@ namespace CarApi.Models
             new LaunchedCars{Name = "Tata Harrier", StartingPrice = "15.59 Lakhs",ImageURL = "TataHarrier",Brand =TATA},
             new LaunchedCars{Name = "Renault Kwid", StartingPrice = "3.33 Lakhs",ImageURL = "RenaultKwid", Brand=RENAULT},
             new LaunchedCars{Name = "Maruti Suzuki Vitara Brezza", StartingPrice = "9.19 Lakhs",ImageURL = "MarutiSuzukiVitaraBrezza", Brand=MARUTISUZUKI},
-            new LaunchedCars{Name = "Toyota Innova Crysta", StartingPrice = "18.25 Lakhs",ImageURL = "ToyotaInnovaCrysta", Brand = TOYOTA}
+            new LaunchedCars{Name = "Toyota Innova Crysta", StartingPrice = "18.25 Lakhs",ImageURL = "ToyotaInnovaCrysta", Brand = TOYOTA},
+            new LaunchedCars{Name = "Maruti Suzuki S-Cross", StartingPrice = "10.27 Lakhs", ImageURL = "SCross", Brand = MARUTISUZUKI},
+            new LaunchedCars{Name = "Maruti Suzuki Celerio", StartingPrice = "5.13 Lakhs", ImageURL = "Celerio", Brand = MARUTISUZUKI},
+            new LaunchedCars{Name = "Maruti Suzuki Dzire", StartingPrice = "6.8 Lakhs", ImageURL = "Dzire", Brand = MARUTISUZUKI},
+            new LaunchedCars{Name = "Maruti Suzuki Wagon R", StartingPrice = "5.1 Lakhs", ImageURL = "WagonR", Brand = MARUTISUZUKI},
+            new LaunchedCars{Name = "Maruti Suzuki Ertiga", StartingPrice = "8.64 Lakhs", ImageURL = "Ertiga", Brand = MARUTISUZUKI},
+            new LaunchedCars{Name = "Maruti Suzuki Baleno", StartingPrice = "6.63 Lakhs", ImageURL = "Baleno", Brand = MARUTISUZUKI}
         };
         
         public List<UpcomingCars> GetUpcomingCars()
@@ -95,6 +101,39 @@ namespace CarApi.Models
             return _availableCars;
         }
 
+        public List<string> GetBrands()
+        {
+            var brands = new List<string>
+            {
+                CarData.HYUNDAI,
+                CarData.MARUTISUZUKI,
+                CarData.TATA,
+                CarData.RENAULT,
+                CarData.TOYOTA,
+                CarData.HONDA,
+                CarData.MAHINDRA,
+                CarData.BMW,
+                CarData.MG,
+                CarData.JAGUAR,
+                CarData.LANDROVER
+            };
+
+            return brands;
+        }
+
+        public List<string> GetDealer()
+        {
+            var dealer = new List<string>
+            {
+                "Ahmedabad",
+                "Bangalore",
+                "Chennai",
+                "Coimbatore",
+                "Mumbai",
+                "Delhi"
+            };
+            return dealer;
+        }
 
         private string GetImageURL(string category, string name)
         {
@@ -113,6 +152,7 @@ namespace CarApi.Models
         public const string MG = "MG";
         public const string JAGUAR = "Jaguar";
         public const string LANDROVER = "LandRover";
+
     }
 
 }
