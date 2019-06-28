@@ -30,7 +30,6 @@ D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\CarApi.run
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\CarApi.runtimeconfig.dev.json
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\CarApi.dll
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.1\CarApi.pdb
-D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.csprojAssemblyReference.cache
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.csproj.CoreCompileInputs.cache
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.RazorAssemblyInfo.cache
 D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.1\CarApi.RazorAssemblyInfo.cs

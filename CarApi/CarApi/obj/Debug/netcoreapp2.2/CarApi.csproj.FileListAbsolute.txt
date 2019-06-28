@@ -1,0 +1,13 @@
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.2\CarApi.deps.json
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.2\CarApi.runtimeconfig.json
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.2\CarApi.runtimeconfig.dev.json
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.2\CarApi.dll
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\bin\Debug\netcoreapp2.2\CarApi.pdb
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.csproj.CoreCompileInputs.cache
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.RazorAssemblyInfo.cache
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.RazorAssemblyInfo.cs
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.AssemblyInfoInputs.cache
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.AssemblyInfo.cs
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.RazorTargetAssemblyInfo.cache
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.dll
+D:\MyProjects\GitHub\CarWaleAPI\CarApi\CarApi\obj\Debug\netcoreapp2.2\CarApi.pdb
