@@ -18,6 +18,7 @@ namespace CarApi.Controllers
         private string _webpextension = ".webp";
         private string _pngextension = ".png";
         private string _adsCategory = "Ads";
+        private string _otherCategory = "Others";
 
         private readonly IHostingEnvironment _hostingEnvironment;
         public ImageController(IHostingEnvironment hostingEnvironment)
@@ -46,6 +47,13 @@ namespace CarApi.Controllers
             //var name = "Ad_vw";
             var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, _adsCategory, name + _pngextension);
             return new PhysicalFileResult(root, "image/webp");
+        }
+
+        [HttpGet("GetOtherImage")]
+        public IActionResult GetOtherImage(string name)
+        {
+            var root = Path.Combine(_hostingEnvironment.ContentRootPath, _imageFolder, _otherCategory, name + _pngextension);
+            return new PhysicalFileResult(root, "image/png");
         }
 
         private string GetRandomImage(string size)

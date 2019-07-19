@@ -15,17 +15,20 @@ namespace CarApi.Controllers
     {
         private CarData _cardata;
         private readonly AppSettings _appSettings;
+        private CarviewContext _carviewContext;
 
         public BrandController(IOptions<AppSettings> appsettings)
         {
             _appSettings = appsettings.Value;
             _cardata = new CarData(_appSettings.CarWaleApiBaseURL);
+            _carviewContext = new CarviewContext();
         }
 
         [HttpGet("GetBrands")]
         public List<string> GetBrands()
         {
-            return _cardata.GetBrands();
+            var result = _carviewContext.Brands.Where(b => b.IsActive == true).Select(b=>b.Name).ToList();
+            return result;
         }
     }
 }

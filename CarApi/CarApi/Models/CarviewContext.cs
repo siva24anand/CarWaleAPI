@@ -10,6 +10,7 @@ namespace CarApi.Models
     {
         public DbSet<Brand> Brands { get; set; }
         public DbSet<Car> Cars { get; set; }
+        public DbSet<Dealer> Dealers { get; set; }
 
         private readonly string _dbConnectionstring = @"Server=MININT-454LNE9;Database=carview;Trusted_Connection=True;";
 
